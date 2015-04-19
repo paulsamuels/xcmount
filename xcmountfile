@@ -1,0 +1,9 @@
+xcodeproj "xcmount.xcodeproj"
+
+target "xcmount", "Specs" do
+  mount "xcmount/Source", "xcmount/Source"
+end
+
+target "Specs" do
+  mount "Specs/Source", "Specs/Source"
+end

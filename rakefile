@@ -1,0 +1,11 @@
+namespace :coverage do
+  desc "Generate code coverage"
+  task :generate do
+    sh 'Pods/XcodeCoverage/getcov --show'
+  end
+  
+  desc "Clear code coverage"
+  task :clear do
+    sh 'Pods/XcodeCoverage/cleancov'
+  end
+end
